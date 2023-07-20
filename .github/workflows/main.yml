@@ -5,6 +5,10 @@ on:
     branches:
       - master  # Adjust the branch name if needed
   workflow_dispatch:
+    inputs:
+        folder_name:
+          description: 'Name of the folder to process'
+          required: true
 jobs:
   read_files:
     runs-on: ubuntu-latest
