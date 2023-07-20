@@ -44,6 +44,7 @@ if [ -d "$folder_name" ]; then
             if [ "$started_reading" = true ]; then
                 # Replace the following line with your desired actions on each file
                 echo "Reading file: $file"
+                cat "$file"
                 # You can read the file using 'cat', 'less', 'more', etc., or process its contents in any other way you need.
             fi
         fi
