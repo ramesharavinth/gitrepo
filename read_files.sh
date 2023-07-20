@@ -25,6 +25,7 @@ echo "folder_name: $folder_name"
 if [ -d "$folder_name" ]; then
     # Flag to track if we've started reading files
     started_reading=false
+    echo "started_reading: $started_reading"
 
     # Loop through each file in the folder
     for file in "$folder_name"/*; do
