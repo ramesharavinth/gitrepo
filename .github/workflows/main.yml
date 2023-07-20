@@ -3,7 +3,7 @@ name: Read Files from Folder
 on:
   push:
     branches:
-      - main  # Adjust the branch name if needed
+      - master  # Adjust the branch name if needed
 
 jobs:
   read_files:
