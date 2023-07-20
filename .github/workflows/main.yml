@@ -3,7 +3,7 @@ name: Read Files from Folder
 on:
   push:
     branches:
-      - master  # Adjust the branch name if needed
+      - none  # Adjust the branch name if needed
   workflow_dispatch:
     inputs:
         folder_name:
