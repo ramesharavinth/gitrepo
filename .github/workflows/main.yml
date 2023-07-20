@@ -6,7 +6,7 @@ on:
       - master  # Adjust the branch name if needed
   workflow_dispatch:
     inputs:
-        version_number:
+        folder_name:
           description: 'Version Number'
           required: true
 jobs:
@@ -24,4 +24,4 @@ jobs:
         # Replace "your_folder_name" with the default folder name you want to read from
         # You can also pass the folder name dynamically from the GitHub Actions input (folder_name)
         run: |
-          ./read_files.sh "${{ github.event.inputs.folder_name || 'version_number' }}"
+          ./read_files.sh "${{ github.event.inputs.folder_name || 'folder_name' }}"
