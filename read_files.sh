@@ -2,9 +2,12 @@
 
 # Assuming you have cloned the repository, change to the repository's root directory
 current_directory=$(pwd)
-echo "Current directory: $current_directory"
 
-cd $current_directory/$test
+echo "Current directory: $current_directory"
+path_with_folder="$current_directory/$test"
+
+cd "$path_with_folder"
+echo " path_with_folder: $path_with_folder"
 
 # Get the folder name from the first argument passed to the script
 folder_name="$1"
