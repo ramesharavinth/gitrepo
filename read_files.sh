@@ -11,8 +11,6 @@ folder_name="$1"
 
 path_with_folder="$current_directory/$folder_name"
 
-ls -l
-
 cd "$current_directory"
 echo "path_with_folder: $path_with_folder"
 
@@ -26,14 +24,13 @@ if [ -d "$folder_name" ]; then
     # Flag to track if we've started reading files
     started_reading=false
     echo "started_reading: $started_reading"
-    ls -l
     # Loop through each file in the folder
     for file in "$folder_name"/*; do
         # Check if the file is a regular file (not a directory)
-          echo "file: reading"
+          echo "for loop start"
 
         if [ -f "$file" ]; then
-            echo "file: true"
+            echo "file present"
             start_file = "New Text Document.txt"
             # If we haven't started reading and the current file matches the start_file, set the flag to true
             #if [ "$file" = "$folder_name/$start_file" ]; then
