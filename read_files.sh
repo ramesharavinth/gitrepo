@@ -4,7 +4,7 @@
 current_directory=$(pwd)
 echo "Current directory: $current_directory"
 
-cd current_directory
+cd $current_directory
 
 # Get the folder name from the first argument passed to the script
 folder_name="$1"
