@@ -31,12 +31,13 @@ if [ -d "$folder_name" ]; then
 
         if [ -f "$file" ]; then
             echo "file present"
-             echo "file present : $file"
+             echo "file name : $file"
             start_file = "New Text Document.txt"
             # If we haven't started reading and the current file matches the start_file, set the flag to true
-            #if [ "$file" = "$folder_name/$start_file" ]; then
+            if [ "$file" = "$folder_name/$start_file" ]; then
                 started_reading=true
-            #fi
+                echo "started_reading : true"
+            fi
 
             # If the flag is true, it means we've already started reading, so perform the desired actions on the file
             if [ "$started_reading" = true ]; then
