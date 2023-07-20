@@ -26,10 +26,12 @@ if [ -d "$folder_name" ]; then
     # Flag to track if we've started reading files
     started_reading=false
     echo "started_reading: $started_reading"
-
+    ls -l
     # Loop through each file in the folder
     for file in "$folder_name"/*; do
         # Check if the file is a regular file (not a directory)
+          echo "file: reading"
+
         if [ -f "$file" ]; then
             # If we haven't started reading and the current file matches the start_file, set the flag to true
             if [ "$file" = "$folder_name/$start_file" ]; then
