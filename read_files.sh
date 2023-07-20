@@ -4,7 +4,10 @@
 current_directory=$(pwd)
 
 echo "Current directory: $current_directory"
-path_with_folder="$current_directory/$test"
+
+desired_folder="test"
+
+path_with_folder="$current_directory/$desired_folder"
 
 cd "$path_with_folder"
 echo " path_with_folder: $path_with_folder"
