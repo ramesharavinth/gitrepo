@@ -17,8 +17,10 @@ cd "$path_with_folder"
 echo "path_with_folder: $path_with_folder"
 
 # Get the folder name from the first argument passed to the script
-folder_name="$1"
+echo "Current directory: $current_directory"
 
+folder_name="$1"
+echo "folder_name: $folder_name"
 # Check if the folder exists
 if [ -d "$folder_name" ]; then
     # Flag to track if we've started reading files
