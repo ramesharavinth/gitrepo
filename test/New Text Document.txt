@@ -1,0 +1,2 @@
+In this script, we use the [ -d "$folder_name" ] conditional statement to check if the specified folder exists. If the folder exists, the script prints "Folder 'folder_name' exists." Otherwise, it prints "Folder 'folder_name' does not exist."
+
