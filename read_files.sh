@@ -11,6 +11,8 @@ folder_name="$1"
 
 path_with_folder="$current_directory/$folder_name"
 
+ls -l
+
 cd "$path_with_folder"
 echo "path_with_folder: $path_with_folder"
 
