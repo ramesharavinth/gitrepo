@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Assuming you have cloned the repository, change to the repository's root directory
-cd /path/to/your/git/repo
+cd /
 
 # Get the folder name from the first argument passed to the script
 folder_name="$1"
