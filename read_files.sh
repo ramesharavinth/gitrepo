@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # Assuming you have cloned the repository, change to the repository's root directory
+git checkout master
+
 current_directory=$(pwd)
 
 echo "Current directory: $current_directory"
@@ -10,7 +12,7 @@ folder_name="$1"
 path_with_folder="$current_directory/$folder_name"
 
 cd "$path_with_folder"
-echo " path_with_folder: $path_with_folder"
+echo "path_with_folder: $path_with_folder"
 
 # Get the folder name from the first argument passed to the script
 folder_name="$1"
