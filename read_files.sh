@@ -13,7 +13,7 @@ path_with_folder="$current_directory/$folder_name"
 
 ls -l
 
-cd "$path_with_folder"
+cd "$current_directory"
 echo "path_with_folder: $path_with_folder"
 
 # Get the folder name from the first argument passed to the script
