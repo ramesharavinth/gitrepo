@@ -1,0 +1,23 @@
+name: Read Files from Folder1
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name if needed
+
+jobs:
+  read_files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Make shell script executable
+        run: chmod +x read_files.sh
+
+      - name: Run shell script
+        # Replace "your_folder_name" with the default folder name you want to read from
+        # You can also pass the folder name dynamically from the GitHub Actions input (folder_name)
+        run: |
+          ./read_files.sh "${{ github.event.inputs.folder_name || 'your_folder_name' }}"
