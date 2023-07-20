@@ -32,8 +32,8 @@ if [ -d "$folder_name" ]; then
         if [ -f "$file" ]; then
             echo "file present"
             echo "file name : $file"
-            start_file = "New Text Document.txt"
-            checkfile = "$folder_name/$start_file"
+            start_file="New Text Document.txt"
+            checkfile="$folder_name/$start_file"
             echo "checkfile : $checkfile"
             # If we haven't started reading and the current file matches the start_file, set the flag to true
             if [ "$file" = "$checkfile" ]; then
